@@ -1,11 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/Trayz72/flask-pytest-demo.git'
-            }
-        }
+
         stage('Setup Python') {
             steps {
                 sh '''
