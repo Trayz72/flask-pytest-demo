@@ -18,6 +18,11 @@ pipeline {
                 '''
             }
         }
+        stage('Run UI Tests') {
+            steps {
+                sh 'venv/bin/pytest -v test_ui.py'
+            }
+        }
     }
 
 }
