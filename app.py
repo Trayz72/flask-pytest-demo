@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Hello, Automated Testing!"
+    return "Automated Testing!"
 
 @app.route("/add/<int:a>/<int:b>")
 def add(a, b):
